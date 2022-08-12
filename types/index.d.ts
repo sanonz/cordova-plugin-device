@@ -32,6 +32,8 @@ interface Device {
     serial: string;
     /** Get the Android device's SDK version. (Android-only) */
     sdkVersion?: string;
+    /** Initialize device info */
+    init: () => void;
 }
 
 declare var device: Device;
